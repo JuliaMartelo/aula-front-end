@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+        body {
+            background-color: papayawhip;
+            justify-content: center;
+            display: flex;
+
+        }
+    
+        article {
+            box-sizing: border-box;
+            width: 180px;
+            height: 180px;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 15px;
+            border: 1px dashed purple;
+            background-color: plum;
+            text-align: center;
+            box-shadow: 2px 2px 5px black;
+        }
+        article img {
+        
+            width: 40px;
+        }
+
+        article h1 {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+        }
+
+        article p {
+            text-align: center;
+            font-family: cursive;
+            font-size: 12px;
+        }
+
+        .caixa-azul{
+            background-color: pink;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <article>
+        
+        <img src="./imagens/coração.svg" alt="foto de um coração">
+        <h1>Web Desing</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing?</p>
+    </article>
+
+    <article class="caixa-azul">
+        
+        <img src="./imagens/raio.svg" alt="foto de um raio">
+        <h1>Graphics Desing</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing?</p>
+    </article>
+    <article>
+        
+        <img src="./imagens/estrela.svg" alt="foto de uma estrela">
+        <h1>UI/UX Desing</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing?</p>
+    </article>
+</body>
+</html>

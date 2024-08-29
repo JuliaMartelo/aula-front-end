@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="visewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         section {
             display: flex;
-            justify-content:space-around; /*como os intens vao ser distribuidos */
+            /*organiza as caixas*/
+            justify-content: flex-start;
+            /*alinhamento da direção*/
+            flex-wrap: wrap;
+
+
             width: 700px;
             height: 500px;
             margin-left: auto;
             margin-right: auto;
             border: 3px dotted black;
+            
         }
+
         article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
             width: 100px;
             height: 100px;
             margin-bottom: 10px;
@@ -22,17 +35,24 @@
             border: 1px dashed black;
             border-radius: 5px;
         }
-
-
     </style>
 </head>
+
 <body>
-    
+
     <section>
-        <article></article>
-        <article></article>
-        <article></article>
+        <article>Item 1</article>
+        <article>Item 2</article>
+        <article>Item 3</article>
+        <article>Item 4</article>
+        <article>Item 5</article>
+        <article>Item 6</article>
+        <article>Item 7</article>
+        <article>Item 8</article>
+        <article>Item 9</article>
+        <article>Item 10</article>
     </section>
 
 </body>
+
 </html>
