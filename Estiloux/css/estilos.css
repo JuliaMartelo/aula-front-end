@@ -5,12 +5,18 @@
     box-sizing: border-box;
 }
 
+    html, body {
+        height: 100%;
+        border: 2px solid red;
+    }
+
     body {
         background-color:#EFEFEF;
+        border: 2px solid blue;
     }
-    header {
+    header, footer {
         width: 100%;
-        height: 80px;
+        height: 10%;
         background-color: #727272;
     }
     .header-flex {
@@ -21,9 +27,9 @@
 
     h1 {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 30px;
-      font-weight: 300;
-      color: white;
+      font-size: 26px;
+      font-weight: 100;
+      color: rgb(228, 219, 219);
     }
     /* caixa para centralizar o conteudo */
     .layout-grid {
@@ -34,6 +40,15 @@
         /* border: 3px solid black ; */
     }
 
+    .ux {
+        font-size: 30px;
+        margin-left: 3px;
+        font-style: italic ;
+        font-weight: 600;
+        font-family: monospace;
+        color: white;
+    }
+
     nav {
         width: 400px;
         height: 100%;
@@ -42,4 +57,62 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+    }
+    
+    nav a {
+        color: #EFEFEF;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        height: 80px;
+        align-items: center;
+        transition: background-color 0.4s, margin-left 0.8s, margin-bottom 0.8s;
+    }
+
+    nav a:hover {
+        color: black;
+        text-decoration: underline;
+        font-style: italic;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        background-color: rgba(180, 170, 170 , 0.5);
+        
+    }
+
+    main {
+        width: 100%;
+        height: 80%;
+        border: 3px solid rebeccapurple;
+    }
+
+    .main-flex{
+        border: 3px solid palevioletred;
+        background-color: rgb(162, 224, 237);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+    }
+    
+    .harmonia {
+        border: 2px solid purple;
+
+        width: 700px;
+        height: 100%;
+
+        /*margin: 10px;*/
+    }
+
+    aside {
+        border: 1px solid rgb(200, 28, 28);
+        width: 250px;
+        height: 100%;
+
+        background-color: rgb(223, 120, 244);
+        /* margin: 10px; */
     }
